@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.navbar Link {
+  color: #fff;
+}
+
 .navbar a {
   color: #fff;
   padding: 10px;

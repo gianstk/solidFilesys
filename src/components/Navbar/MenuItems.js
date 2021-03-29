@@ -1,17 +1,17 @@
 export const MenuItems = [
   {
     title: 'Home',
-    url: '#',
+    url: '/',
     cName: 'nav-links'
   },
   {
     title: 'File Manger',
-    url: '#fileManager',
+    url: '/fileManager',
     cName: 'nav-links'
   },
   {
     title: 'Random',
-    url: '#random',
+    url: '/random',
     cName: 'nav-links'
   }
 ]

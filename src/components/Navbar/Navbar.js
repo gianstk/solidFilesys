@@ -4,27 +4,39 @@ import './../../App.css';
 import './Navbar.css';
 
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 class Navbar extends Component {
   render() {
     return(
-      <div className="navbar">
-        <div className="container flex" >
+        <div className="navbar">
+          <div className="container flex" >
 
-          <h1 class="logo">Gian Solid App</h1>
-          <nav>
-            <ul>
-              {MenuItems.map((item, index) => {
-                return (
-                  <li><a className={item.cName} href={item.url} key={index}>
-                    {item.title}
-                  </a></li>
-                );
-              })}
-            </ul>
-          </nav>
-          
+            <h1 class="logo">My Solid App</h1>
+            <nav>
+              <ul>
+                {MenuItems.map((item, index) => {
+                  return (
+                    <li>
+                      
+                      <Link to={item.url}>{item.title}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+
+          </div>
         </div>
-      </div>
+
+
+      
     );
   }
 }
